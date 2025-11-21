@@ -236,8 +236,7 @@
             }
             let sitem = document.getElementById("selecteditem");
             sitem.innerHTML=posthtml+"<br>"+(prevurl?("<a href='"+prevurl+"' class='bttn-3' style='float:left;'>Previous</a>"):"")+(nexturl?("<a href='"+nexturl+"' class='bttn-3' style='float:right;'>Next</a>"):"");
-            document.getElementById("scroller").scrollIntoView();
-            } 
+            document.getElementById("scroller").scrollIntoView(); 
     }
     self.httpGet('blogitems.json',function(t){
             jsondata = JSON.parse(t);

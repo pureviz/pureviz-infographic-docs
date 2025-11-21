@@ -227,7 +227,7 @@
     var jsondata = null;
     var itemsdiv = document.getElementById("galleryitems");
     function updatecontent(){
-          if(jsondata.count){
+          if(jsondata){
                 let selected =false;
                 for(let c=0;c<Object.keys(d.items).length;c++){
                   if(post == jsondata.items[c].url ){

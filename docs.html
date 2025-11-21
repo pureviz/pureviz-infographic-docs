@@ -219,8 +219,8 @@
 
   </style>
   <script>
-    console.log(window.location.pathname);
-    const post = (window.location.pathname=="/infographic/docs"?"/infographic/docs#getting-started":window.location.pathname);
+    console.log(window.location.hash);
+    const post = (window.location.pathname=="/infographic/docs"?"#getting-started":window.location.hash);
     let posthtml = "";
     let nexturl =null;
     let prevurl =null;
